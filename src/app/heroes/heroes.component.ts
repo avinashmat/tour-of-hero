@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { Hero } from '../Models/hero';
+import {HEROES} from '../Models/mock-heroes';
+import {  NgFor } from '@angular/common';
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent {
-hero: Hero = {
-  id: 1,  
-  name: 'Windstorm'
-}
+  heroes = HEROES;
+  
 }
